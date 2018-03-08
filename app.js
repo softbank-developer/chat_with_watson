@@ -73,8 +73,8 @@ app.get('/', function (req, res) {
     console.log("ROUTER /");
 
     res.render('index', {
-        human_icon_url: process.env.HUMAN_ICON_URL || '/images/human_icon.png',
-        bot_icon_url: process.env.BOT_ICON_URL || '/images/bot_icon.png',
+        bot_icon_url: process.env.BOT_ICON_URL || '/images/muraki_bot.png',
+        human_icon_url: null,
         debug_mode: process.env.DEBUG_MODE ? false : true,
     });
 });
